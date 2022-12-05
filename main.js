@@ -24,7 +24,7 @@ ticketForm.addEventListener('submit', function(event){
        }
 //console.log(`${price.toFixed(2)}€`)
     //3 mostrare il biglietto sullo schermo
-    
+    const person = [];
 
     document.getElementById('ticket-person').innerHTML = person;
     document.getElementById('ticket-offert').innerHTML = offert;
