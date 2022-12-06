@@ -26,13 +26,13 @@ ticketForm.addEventListener('submit', function(event){
     //3 mostrare il biglietto sullo schermo
     const person = [];
 
-    document.getElementById('ticket-person').innerHTML = person;
+    document.getElementById('ticket-person').innerHTML = fullName;
     document.getElementById('ticket-offert').innerHTML = offert;
     document.getElementById('ticket-carrozza').innerHTML = Math.floor(Math.random() * 10 + 1);
     document.getElementById('ticket-cp').innerHTML = Math.floor(Math.random() * 10000 + 1);
     document.getElementById('ticket-costo').innerHTML = `${price.toFixed(2)}€`;
 
-    document.querySelector('ticket-container').classList.add("show");
+    document.getElementById('ticket-container').classList.add("show");
 })
 
 btnReset.addEventListener('click', function(){
